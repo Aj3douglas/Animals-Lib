@@ -1,7 +1,7 @@
 package org.aj3douglas.ajanimals.animals
 
 import com.cryptomorin.xseries.XMaterial
-import org.aj3douglas.ajanimals.errors.AJException
+import org.aj3douglas.ajanimals.errors.AnimalException
 import org.aj3douglas.ajanimals.util.ItemBuilder
 import org.aj3douglas.ajanimals.util.debug
 import org.aj3douglas.ajanimals.util.from
@@ -27,7 +27,7 @@ class Turtle(private val location:Location) {
 
     }
     private fun spawnArmourStand(location: Location, small:Boolean = false): ArmorStand {
-        val stand = location.world?.spawn(location, ArmorStand::class.java) ?: throw AJException("World in location is null!")
+        val stand = location.world?.spawn(location, ArmorStand::class.java) ?: throw AnimalException("World in location is null!")
         stand.setBasePlate(false)
         stand.setArms(true)
         stand.isVisible = true
