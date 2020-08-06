@@ -1,0 +1,5 @@
+name: AJ_animals
+author: Aj3douglas
+version: 1.0
+main: org.aj3douglas.ajanimals.test.Test
+api-version: 1.13
